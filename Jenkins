@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('git checkout') {
             steps {
-            git credentialsId: 'Gitcrd', url: 'https://github.com/sufiyan440/jenkinsproject3.git'
+            git branch: 'main', credentialsId: 'Gitcrd', url: 'https://github.com/sufiyan440/Jenkins.git'
             }
         }
     }
